@@ -1,0 +1,8 @@
+/* This is the CSS for the about composer-list page */
+
+/* This is for the search box, making it smaller and float right */
+.textSearch {
+  width: 30%;
+  float: right;
+  margin-bottom: 5px;
+}

@@ -1,0 +1,16 @@
+<!-- This is the composer-details component page -->
+<div class="row">
+  <div class="col-sm-12">
+    <ul class="list-group">
+      <!-- This is to be able to access the composerID value -->
+      <li class="list-group-item">Composer ID: {{ composer.composerId }}</li>
+      <!-- This is to be able to access the full name value -->
+      <li class="list-group-item">Full name: {{ composer.fullName }}</li>
+      <!-- This is to be able to access the Genre value -->
+      <li class="list-group-item">Genre: {{ composer.genre }}</li>
+    </ul>
+    <br />
+    <!-- This is to go back to the composers list so users do not have to click backwards.  -->
+    <a routerLink="/composer-list" class="float-right">Return to Composers</a>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+<!-- This is the composer-list page -->
+<div class="row">
+  <div class="col-sm-12">
+    <h1>Welcome to the Composer List page!</h1>
+  </div>
+</div>
+<br/>
+
+<div class="row">
+  <div class="col-sm-12">
+    <!-- Adding the code to bootstrap form control to float right. -->
+    <!-- [formControl] is a directive  -->
+    <div class="textSearch">
+      <input type="text" id="txtSearch" class="form-control" placeholder="Search by name" [formControl]="txtSearchControl" />
+    </div>
+    <table class="table table-bordered">
+      <thead class="thead-dark">
+        <tr>
+          <!-- This is the header of the table cells. -->
+          <th scope="col">Composer ID</th>
+          <th scope="col">Full name</th>
+          <th scope="col">Genre</th>
+        </tr>
+      </thead>
+      <!-- NgFor is a four loop that iterates and array of data
+    word is the temporary variable, it can be anything. added the pipe for async-->
+      <tbody *ngFor="let composer of composers | async">
+        <tr>
+          <td scope="row">
+            <!-- This is to navigate to the details component
+            curly braces are used to use the actual id value from our for loops -->
+            <a routerLink="/composer-details/{{ composer.composerId }}">
+            {{ composer.composerId }}
+          </a>
+          </td>
+          <!-- The data is getting pulled from the composer.class.ts page
+             this will show the composers full name-->
+          <td scope="row">{{ composer.fullName }}</td>
+          <!-- The data is getting pulled from the composer.class.ts page
+             this will show the composers genre-->
+          <td>{{composer.genre}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

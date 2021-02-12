@@ -1,0 +1,10 @@
+/* This is the CSS for the contact component page */
+/* This is aligning the headline center */
+h1 {
+  text-align: center;
+}
+/* This is aligning the headline center */
+h2 {
+  text-align: center;
+  padding:10px;
+}
