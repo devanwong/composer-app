@@ -7813,7 +7813,7 @@ let AboutComponent = /*@__PURE__*/ (() => {
         }
     }
     AboutComponent.ɵfac = function AboutComponent_Factory(t) { return new (t || AboutComponent)(); };
-    AboutComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AboutComponent, selectors: [["app-about"]], decls: 12, vars: 0, consts: [[1, "row"], [1, "col-sm-6"], ["src", "../../assets/frank-ocean.jpg", "alt", "Frank Ocean"], ["href", "https://www.artlistparis.com/manicure/laura-forget/celebrities/dazed-willy-vanderperre-frank-ocean"]], template: function AboutComponent_Template(rf, ctx) {
+    AboutComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AboutComponent, selectors: [["app-about"]], decls: 12, vars: 0, consts: [[1, "row"], [1, "col-sm-6"], ["src", "~/../assets/frank-ocean.jpg", "alt", "Frank Ocean"], ["href", "https://www.artlistparis.com/manicure/laura-forget/celebrities/dazed-willy-vanderperre-frank-ocean"]], template: function AboutComponent_Template(rf, ctx) {
             if (rf & 1) {
                 _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
                 _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
